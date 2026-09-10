@@ -33,10 +33,4 @@ print("Payment ID:", payment1.payment_id)
 print("Amount:", payment1.amount)
 print("Date:", payment1.date)
 print("Student ID:", payment1.student_id)
-payment3 = record_payment(
-    "P003",
-    15000,
-    "2026-09-10",
-    "ST001",
-    10000
-)
+
