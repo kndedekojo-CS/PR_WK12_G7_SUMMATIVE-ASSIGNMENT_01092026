@@ -114,3 +114,4 @@ def search_student(students_list):
             return
 
     print("Student not found.")
+    return None
