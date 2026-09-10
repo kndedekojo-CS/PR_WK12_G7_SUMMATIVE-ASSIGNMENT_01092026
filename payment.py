@@ -34,3 +34,17 @@ print("Amount:", payment1.amount)
 print("Date:", payment1.date)
 print("Student ID:", payment1.student_id)
 
+try:
+    payment1 = record_payment(
+        "P002",
+        -500,
+        "2026-09-10",
+        "ST001",
+        10000
+    )
+
+    print("Payment recorded successfully!")
+
+except ValueError as error:
+    print("Invalid payment:", error)
+
