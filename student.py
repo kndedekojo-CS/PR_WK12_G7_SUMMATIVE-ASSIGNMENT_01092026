@@ -19,3 +19,21 @@ class Student:
         print("Total Fee: ${:,.2f}".format(self.total_fee))
 
 
+# This function checks if the student ID is valid.
+def validate_student_id(student_id, students_list):
+
+    #This function checks if the student ID  is empty.
+    if student_id.strip() == "":
+        print("Error: Student ID cannot be empty.")
+        return False
+
+    #This function checks if the student ID is already being used by another student.
+    for student in students_list:
+        if student.student_id == student_id:
+            print("Error: The Student ID is already being used.")
+            return False
+
+    #This function checks if the student ID is valid.
+    return True
+
+
