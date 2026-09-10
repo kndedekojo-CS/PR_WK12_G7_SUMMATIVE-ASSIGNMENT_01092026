@@ -27,13 +27,13 @@ def validate_student_id(student_id, students_list):
         print("Error: Student ID cannot be empty.")
         return False
 
-    #This function checks if the student ID is already being used by another student.
+    # This function checks if the student ID is already being used by another student.
     for student in students_list:
         if student.student_id == student_id:
             print("Error: The Student ID is already being used.")
             return False
 
-    #This function checks if the student ID is valid.
+    # This function checks if the student ID is valid.
     return True
 
 
@@ -78,3 +78,17 @@ def register_student(students_list):
     students_list.append(new_student)
 
     print(f"Student {name} registered successfully.")
+
+
+# This function displays all the students.
+def display_students(students_list):
+    print("\n~~~~~~Student List ~~~~~~")
+
+    # This checks if there are no students.
+    if len(students_list) == 0:
+        print("No students registered yet.")
+        return
+
+    # This displays each student in the list.
+    for student in students_list:
+        student.display_details()
