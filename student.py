@@ -92,3 +92,25 @@ def display_students(students_list):
     # This displays each student in the list.
     for student in students_list:
         student.display_details()
+
+
+# This function searches for a student by their ID.
+def search_student(students_list):
+    print("\n~~~~~~Search Student ~~~~~~")
+
+    # This asks the user to enter the student's ID they want to search for.
+    student_id = input("Enter Student ID to search: ").strip()
+
+    # This checks if the student ID is in the list.
+    if student_id == "":
+        print("Error: Student ID cannot be empty.")
+        return
+
+    # This searches for the student in the list.
+    for student in students_list:
+        if student.student_id == student_id:
+            print("Student found:")
+            student.display_details()
+            return
+
+    print("Student not found.")
