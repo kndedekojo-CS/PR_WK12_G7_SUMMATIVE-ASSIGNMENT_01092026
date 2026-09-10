@@ -10,3 +10,12 @@ class Student:
         self.name = name
         self.grade = grade
         self.total_fee = total_fee
+
+    # This displays the student's information.
+    def display_details(self):
+        print("Student ID:", self.student_id)
+        print("Name:", self.name)
+        print("Grade:", self.grade)
+        print("Total Fee: ${:,.2f}".format(self.total_fee))
+
+
