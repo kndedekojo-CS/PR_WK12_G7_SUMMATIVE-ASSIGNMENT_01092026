@@ -22,7 +22,7 @@ class Student:
 # This function checks if the student ID is valid.
 def validate_student_id(student_id, students_list):
 
-    #This function checks if the student ID  is empty.
+    # This function checks if the student ID is empty.
     if student_id.strip() == "":
         print("Error: Student ID cannot be empty.")
         return False
@@ -37,3 +37,44 @@ def validate_student_id(student_id, students_list):
     return True
 
 
+# This function registers a new student.
+def register_student(students_list):
+    print("\n~~~~~~Register New Student ~~~~~~")
+
+    # This asks the user to enter the student's ID.
+    student_id = input("Enter Student ID: ").strip()
+
+    # This checks if the student ID is valid.
+    if not validate_student_id(student_id, students_list):
+        return
+
+    # This asks the user to enter the student's name.
+    name = input("Enter Student Name: ").strip()
+
+    # This checks if the name is empty.
+    if name == "":
+        print("Error: Name cannot be empty.")
+        return
+
+    # This asks the user to enter the student's grade.
+    grade = input("Enter Grade/Class (e.g. Grade 10): ").strip()
+
+    # This asks the user to enter the total fee.
+    try:
+        total_fee = float(input("Enter Total Fee Amount: "))
+    except ValueError:
+        print("Error: Fee must be a number.")
+        return
+
+    # This checks if the fee is negative.
+    if total_fee < 0:
+        print("Error: Fee cannot be negative.")
+        return
+
+    # This creates a new student.
+    new_student = Student(student_id, name, grade, total_fee)
+
+    # This adds the student to the list.
+    students_list.append(new_student)
+
+    print(f"Student {name} registered successfully.")
