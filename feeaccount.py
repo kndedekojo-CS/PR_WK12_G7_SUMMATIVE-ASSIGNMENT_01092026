@@ -14,7 +14,7 @@ class FeeAccount:
 
     def calculate_outstanding_balance(self):
         """Calculates the outstanding balance for the student."""
-        return self.student.total_fees - self.calculate_total_paid()  #this subtracts the total amount paid from the total fees owed by the student.
+        return max(0, self.student.total_fees - self.calculate_total_paid())  #this calculates the outstanding balance and uses max(0, ...) to prevent the balance from becoming negative if the student overpays.
 
     def add_payment(self, payment):
         """Adds a Payment object to the account history."""
@@ -40,7 +40,7 @@ class FeeAccount:
                 print(f"{payment.date:<15} | {payment.payment_id:<15} | ${payment.amount:,.2f}")
 
         print("-" * 50)    #prints a line of dashes to separate the payment history from the summary of fees, total paid, and outstanding balance.
-        
+
         print(f"Total Fees: ${self.student.total_fees:,.2f}")
         print(f"Total Paid: ${self.calculate_total_paid():,.2f}")
         print(f"Outstanding Balance: ${self.calculate_outstanding_balance():,.2f}")
