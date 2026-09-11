@@ -7,6 +7,7 @@ class FeeAccount:
 
     def calculate_total_paid(self):
         """Calculates the total amount paid by the student."""
+
         total = 0
         for payment in self.payments:  
             total += payment.amount     #Adds each payment amount to the total paid.
@@ -14,7 +15,7 @@ class FeeAccount:
 
     def calculate_outstanding_balance(self):
         """Calculates the outstanding balance for the student."""
-        return max(0, self.student.total_fees - self.calculate_total_paid())  #this calculates the outstanding balance and prevents the balance from becoming negative if the student overpays.
+        return max(0, self.student.total_fees - self.calculate_total_paid())  #Calculates the outstanding balance and prevents it from becoming negative as a safety measure.
 
     def add_payment(self, payment):
         """Adds a Payment object to the account history."""
@@ -27,11 +28,16 @@ class FeeAccount:
             print("Error: Payment amount must be greater than zero.")
             return False
 
+        if payment.amount > self.calculate_outstanding_balance():   #Prevents overpayment
+            print("Error: Payment exceeds the outstanding balance.")
+            return False
+
         self.payments.append(payment)  #Adds the payment to the payments list.
         return True
 
     def display_payment_history(self):
         """Displays all payments and the current balance."""
+
         print(f"Payment History for {self.student.name} (ID: {self.student.student_id}):")
 
         if not self.payments:    #checks if the student has made any payments
@@ -39,8 +45,10 @@ class FeeAccount:
         else:
             print("Payments:")
             #displays the payment history in a tabular format with headers for date, payment ID, and amount paid.
-            print(f"{'Date':<15} |{'Payment ID':<15} | {'Amount Paid'}")
+
+            print(f"{'Date':<15} | {'Payment ID':<15} | {'Amount Paid'}")
             print("-" * 50)
+
             for payment in self.payments:      #loops through each payment in the payments list and prints the date, payment ID, and amount paid in a formatted manner.
                 print(f"{payment.date:<15} | {payment.payment_id:<15} | ${payment.amount:,.2f}")
 
