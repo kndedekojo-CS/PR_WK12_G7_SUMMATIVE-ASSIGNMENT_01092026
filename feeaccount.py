@@ -14,7 +14,7 @@ class FeeAccount:
 
     def calculate_outstanding_balance(self):
         """Calculates the outstanding balance for the student."""
-        return max(0, self.student.total_fees - self.calculate_total_paid())  #this calculates the outstanding balance and uses max(0, ...) to prevent the balance from becoming negative if the student overpays.
+        return max(0, self.student.total_fees - self.calculate_total_paid())  #this calculates the outstanding balance and prevents the balance from becoming negative if the student overpays.
 
     def add_payment(self, payment):
         """Adds a Payment object to the account history."""
