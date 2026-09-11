@@ -18,8 +18,13 @@ class FeeAccount:
 
     def add_payment(self, payment):
         """Adds a Payment object to the account history."""
+
         if payment.student_id != self.student.student_id:       #checks that the payment belongs to the same student as the account
             print("Error: Payment student ID does not match the account's student ID.")
+            return False
+
+        if payment.amount <= 0:    #prevents zero or negative payment amounts
+            print("Error: Payment amount must be greater than zero.")
             return False
 
         self.payments.append(payment)  #Adds the payment to the payments list.
