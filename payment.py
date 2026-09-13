@@ -25,26 +25,3 @@ def record_payment(payment_id, amount,date, student_id, outstanding_balance):
         payment.check_outstanding_balance(outstanding_balance)
         return payment
 
-payment1 =Payment("P001", 5000, "2026-09-09", "ST001")
-payment1 = record_payment("P001", 5000, "2026-09-09", "ST001",10000)
-
-print("Payment recorded successfully!")
-print("Payment ID:", payment1.payment_id)
-print("Amount:", payment1.amount)
-print("Date:", payment1.date)
-print("Student ID:", payment1.student_id)
-
-try:
-    payment1 = record_payment(
-        "P002",
-        -500,
-        "2026-09-10",
-        "ST001",
-        10000
-    )
-
-    print("Payment recorded successfully!")
-
-except ValueError as error:
-    print("Invalid payment:", error)
-
