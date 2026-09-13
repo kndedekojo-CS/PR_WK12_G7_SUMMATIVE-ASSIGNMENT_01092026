@@ -6,7 +6,7 @@ import json
 
 import os
 
-from student import Student
+from student import Student, register_student, display_students, search_student
 
 from payment import Payment, record_payment
 
@@ -72,10 +72,71 @@ def load_students():
             student_data["total_fee"]
         )
 
-        students. append(student)
+        students.append(student)
 
     return students
 
+def save_students(students):
+    """ Saves students to the JSON file."""
+
+    data = []
+
+    for student in students:
+        student_data = {
+            "student_id": student.student_id,
+            "name": student.name,
+            "grade": student.grade,
+            "total_fee": student.total_fee
+        }
+
+        data.append(student_data)
+    with open(STUDENTS_FILE, "w") as file:
+        json.dump(data, file, indent=4)
+
+
+# This function loads saved payment information from the JSON file.
+def load_payments():
+    with open(PAYMENTS_FILE, "r") as file:
+        data = json.load(file)
+
+    payments = []
+
+    for payment_data in data:
+        payment = Payment(
+            payment_data["payment_id"],
+            payment_data["amount"],
+            payment_data["date"],
+            payment_data["student_id"]
+        )
+
+        payments.append(payment)
+
+    return payments
+
+ 
+
+
+#This function saves payment information to the JSON file.
+def save_payments(payments):
+    data = []
+
+    for payment in payments:
+#store the payment information in a dictionary.
+       payment_data = {
+        "payment_id": payment.payment_id,
+        "amount": payment.amount,
+        "date": payment.date,
+        "student_id": payment.student_id,
+       }
+       data.append(payment_data)
+    with open(PAYMENTS_FILE, "w") as file:
+        json . dump(data , file, indent=4)
+
+
 create_data_files()
+students = load_students()
+payments =load_payments()
+# Save payment information to the JSON file.
+save_payments(payments)
 
 
