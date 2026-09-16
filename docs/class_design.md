@@ -5,7 +5,7 @@ Project 5 – School Fee Payment Tracking System
 ## Team Members
 - Korkor Ndede Kojo – Student class
 - Angelica Bukari – Payment class
-- Aishat Adidere – FeeAccount class
+- Aishat Adedire – FeeAccount class
 - Rebekah Mensah – File handling and integration
 
 ## Selected Project
@@ -42,3 +42,4 @@ Project 5 – School Fee Payment Tracking System
 
 ---
 
+*(Payment and FeeAccount class sections to be added by Member 2 and Member 3)*
