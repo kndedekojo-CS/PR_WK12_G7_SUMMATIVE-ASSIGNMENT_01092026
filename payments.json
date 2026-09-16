@@ -40,5 +40,11 @@
         "amount": 3000.0,
         "date": "2026-09-16",
         "student_id": "S009"
+    },
+    {
+        "payment_id": "P006",
+        "amount": 100.0,
+        "date": "2026-09-17",
+        "student_id": "S006"
     }
 ]
