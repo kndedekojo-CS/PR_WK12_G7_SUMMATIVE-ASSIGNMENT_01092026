@@ -68,4 +68,4 @@ Project 5 – School Fee Payment Tracking System
 | display_payment_history | for loop | Goes through the payments list to extract the date, payment_id, and amount, printing each as a formatted row in the payment history table.
 
 ---
-*(Payment and FeeAccount class sections to be added by Member 2)* 
+*(Payment class sections to be added by Member 2)* 
