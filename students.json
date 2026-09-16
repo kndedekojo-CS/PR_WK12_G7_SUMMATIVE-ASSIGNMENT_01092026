@@ -1,1 +1,74 @@
-[]
+[
+    {
+        "student_id": "S001",
+        "name": "Mary Asare",
+        "grade": "Grade 06",
+        "total_fee": 7000.0
+    },
+    {
+        "student_id": "S002",
+        "name": "John Abam",
+        "grade": "Grade 08",
+        "total_fee": 6000.0
+    },
+    {
+        "student_id": "S003",
+        "name": "Eben Ofori",
+        "grade": "Grade 09",
+        "total_fee": 5000.0
+    },
+    {
+        "student_id": "S004",
+        "name": "Anita Ansah",
+        "grade": "Grade 08",
+        "total_fee": 3000.0
+    },
+    {
+        "student_id": "S005",
+        "name": "Donald Edi",
+        "grade": "Grade 07",
+        "total_fee": 8000.0
+    },
+    {
+        "student_id": "S006",
+        "name": "Romeo Danso",
+        "grade": "Grade 05",
+        "total_fee": 4500.0
+    },
+    {
+        "student_id": "S007",
+        "name": "Ama Dansu",
+        "grade": "Grade 06",
+        "total_fee": 3600.0
+    },
+    {
+        "student_id": "S008",
+        "name": "Ama Badu",
+        "grade": "Grade 06",
+        "total_fee": 4600.0
+    },
+    {
+        "student_id": "S009",
+        "name": "Andy Tetteh",
+        "grade": "Grade 08",
+        "total_fee": 3800.0
+    },
+    {
+        "student_id": "S010",
+        "name": "lizzy Bafo",
+        "grade": "Grade 09",
+        "total_fee": 6700.0
+    },
+    {
+        "student_id": "S011",
+        "name": "AMA dabu",
+        "grade": "Grade 10",
+        "total_fee": 3500.0
+    },
+    {
+        "student_id": "S012",
+        "name": "Sarah Takyi",
+        "grade": "Grade 09",
+        "total_fee": 5600.0
+    }
+]

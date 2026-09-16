@@ -1,1 +1,50 @@
-[]
+[
+    {
+        "payment_id": "P001",
+        "amount": 7000.0,
+        "date": "today",
+        "student_id": "S001"
+    },
+    {
+        "payment_id": "P002",
+        "amount": 6000.0,
+        "date": "today",
+        "student_id": "S002"
+    },
+    {
+        "payment_id": "P003",
+        "amount": 5000.0,
+        "date": "today",
+        "student_id": "S003"
+    },
+    {
+        "payment_id": "P004",
+        "amount": 3000.0,
+        "date": "2026-09-16",
+        "student_id": "S004"
+    },
+    {
+        "payment_id": "",
+        "amount": 3600.0,
+        "date": "2026-09-16",
+        "student_id": "S007"
+    },
+    {
+        "payment_id": "P007",
+        "amount": 7000.0,
+        "date": "2026-09-16",
+        "student_id": "S005"
+    },
+    {
+        "payment_id": "P009",
+        "amount": 3000.0,
+        "date": "2026-09-16",
+        "student_id": "S009"
+    },
+    {
+        "payment_id": "P006",
+        "amount": 100.0,
+        "date": "2026-09-17",
+        "student_id": "S006"
+    }
+]

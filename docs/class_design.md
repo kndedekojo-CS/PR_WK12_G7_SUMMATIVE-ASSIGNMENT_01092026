@@ -66,5 +66,6 @@ Project 5 – School Fee Payment Tracking System
 |---|---|---|
 | calculate_total_paid | for loop | Goes through the payments list one by one and adds each payment's amount to the running total
 | display_payment_history | for loop | Goes through the payments list to extract the date, payment_id, and amount, printing each as a formatted row in the payment history table.
+
 ---
 *(Payment class section to be added by Member 2)* 
