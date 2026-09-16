@@ -78,6 +78,7 @@ def register_student(students_list):
     students_list.append(new_student)
 
     print(f"Student {name} registered successfully.")
+    return new_student
 
 
 # This function displays all the students.
@@ -92,6 +93,8 @@ def display_students(students_list):
     # This displays each student in the list.
     for student in students_list:
         student.display_details()
+        # This adds spacing between each student's details.
+        print()
 
 
 # This function searches for a student by their ID.

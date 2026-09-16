@@ -25,3 +25,5 @@ def record_payment(payment_id, amount,date, student_id, outstanding_balance):
         payment.check_outstanding_balance(outstanding_balance)
         return payment
 
+
+
