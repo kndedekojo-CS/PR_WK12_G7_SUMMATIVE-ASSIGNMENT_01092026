@@ -5,7 +5,7 @@ Project 5 – School Fee Payment Tracking System
 ## Team Members
 - Korkor Ndede Kojo – Student class
 - Angelica Bukari – Payment class
-- Aishat Adidere – FeeAccount class
+- Aishat Adedire – FeeAccount class
 - Rebekah Mensah – File handling and integration
 
 ## Selected Project
@@ -42,4 +42,30 @@ Project 5 – School Fee Payment Tracking System
 
 ---
 
-*(Payment and FeeAccount class sections to be added by Member 2 and Member 3)*
+## Class 3: FeeAccount
+**Purpose:** This acts as a financial ledger representing a fee account for a student, It tracks their payment history, calculates the total amount paid as well as the outstanding balance and links students with their payment records. 
+
+## Attributes
+
+| Attribute | Data Type | Description |
+|---|---|---|
+| student | `Student` object| Stores the student linked to the fee account
+| payments | list | Stores all payment records belonging to the student
+
+## Methods
+| Method | Purpose |
+|---|---|
+| __init__ | This creates a new FeeAccount object linked to a student and initializes an empty payments list
+| calculate_total_paid | This loops through the payments list and calculates the total sum of all payment amounts
+| calculate_outstanding_balance | This subtracts the total amount paid from the student's total fee to determine the remaining balance
+| add_payment | This verifies that the payment belongs to the correct student and adds it to the payments list
+| display_payment_history | This prints a formatted table of all payments, the total course fee, total amount paid, and the outstanding balance
+
+## Loops Used
+| Location | Loop Type | Purpose |
+|---|---|---|
+| calculate_total_paid | for loop | Goes through the payments list one by one and adds each payment's amount to the running total
+| display_payment_history | for loop | Goes through the payments list to extract the date, payment_id, and amount, printing each as a formatted row in the payment history table.
+
+---
+*(Payment and FeeAccount class sections to be added by Member 2)* 
