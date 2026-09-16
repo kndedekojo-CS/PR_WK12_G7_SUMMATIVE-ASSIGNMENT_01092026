@@ -42,4 +42,3 @@ Project 5 – School Fee Payment Tracking System
 
 ---
 
-*(Payment and FeeAccount class sections to be added by Member 2 and Member 3)*
