@@ -5,11 +5,10 @@
 A Python-based system for managing student fee payments, tracking payment history, and calculating outstanding balances.
 
 ## Team Members
-
-- Team Member 1 – Student Class
-- Team Member 2 – Payment Class
-- Team Member 3 – FeeAccount Class
-- Team Member 4 – Main Program, File Handling, Integration and Testing
+- Korkor Ndede Kojo – Student class
+- Angelica Bukari – Payment class
+- Aishat Adidere – FeeAccount class
+- Rebekah Mensah – File handling and integration
 
 ## Project Description
 
