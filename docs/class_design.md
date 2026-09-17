@@ -11,7 +11,7 @@ Project 5 – School Fee Payment Tracking System
 ## Selected Project
 Project 5 – School Fee Payment Tracking System
 
----
+
 
 ## Class 1: Student
 
@@ -49,11 +49,11 @@ Project 5 – School Fee Payment Tracking System
 | display_students | for loop | This goes through the students list one by one and displays each student's details |
 | search_student | for loop | This goes through the students list one by one, comparing each student's ID to the one being searched for |
 
----
+
 
 ## Class 2: Payment
 
-**Purpose:**This represents a single fee payment made by a student. It stores the payment's ID, amount, date, and the ID of the student it belongs to, and includes validation to make sure the payment amount is valid and does not exceed the student's outstanding balance before the payment is recorded.
+**Purpose:** This represents a single fee payment made by a student. It stores the payment's ID, amount, date, and the ID of the student it belongs to, and includes validation to make sure the payment amount is valid and does not exceed the student's outstanding balance before the payment is recorded.
 
 ### Attributes
 
@@ -82,7 +82,7 @@ Project 5 – School Fee Payment Tracking System
 
 This class does not use any loops. Each method works with a single Payment object and validates it using `if` statements, rather than looping through a collection.
 
----
+
 
 ## Class 3: FeeAccount
 
