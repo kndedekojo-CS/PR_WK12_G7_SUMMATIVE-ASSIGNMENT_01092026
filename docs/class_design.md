@@ -8,10 +8,6 @@ Project 5 – School Fee Payment Tracking System
 - Aishat Adidere – FeeAccount class
 - Rebekah Mensah – File handling and integration
 
-## Selected Project
-Project 5 – School Fee Payment Tracking System
-
-
 
 ## Class 1: Student
 
