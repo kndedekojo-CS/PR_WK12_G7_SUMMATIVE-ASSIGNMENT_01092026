@@ -70,5 +70,11 @@
         "name": "Sarah Takyi",
         "grade": "Grade 09",
         "total_fee": 5600.0
+    },
+    {
+        "student_id": "ID SO10",
+        "name": "Alice Smith",
+        "grade": "Class 1",
+        "total_fee": 100.0
     }
 ]
